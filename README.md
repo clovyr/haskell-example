@@ -18,11 +18,11 @@ implemented in several popular programming languages.
 
 ## Running the examples
 
-1. Navigate to one of the example directories:<br/>
+1. Navigate to one of the example directories:  
 `cd ~/git/github.com/clovyr/haskell-example/examples/todomvc`
-1. Install dependencies<br>
+1. Install dependencies  
 `nix-build -E '(import dep/reflex-platform {}).ghcjs.callPackage ./. {}'`
-1. Run the server<br>
+1. Run the server  
 `cd result/bin/reflex-todomvc.jsexe && python3 -m http.server 8080`
 1. In a new browser tab, enter the url of your Clovyr Code instance
 prefixed by `8080-`
