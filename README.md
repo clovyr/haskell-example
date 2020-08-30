@@ -20,17 +20,17 @@ implemented in several popular programming languages.
 
 1. Navigate to one of the example directories:  
 `cd ~/git/github.com/clovyr/haskell-example/examples/todomvc`
-1. Install dependencies  
+2. Install dependencies  
 `nix-build -E '(import dep/reflex-platform {}).ghcjs.callPackage ./. {}'`
-1. Run the server  
+3. Run the server  
 `cd result/bin/reflex-todomvc.jsexe && python3 -m http.server 8080`
-1. In a new browser tab, enter the url of your Clovyr Code instance
+4. In a new browser tab, enter the url of your Clovyr Code instance
 prefixed by `8080-`
    * The URL for your instance is found in the green bar at the bottom of 
    the application space
    * For example, if your Code environment is `https://happy-otter.wnext.app`, 
    the served application is at `https://8080-happy-otter.wnext.app`. 
-1. To stop the server, enter `CTRL+C` in the terminal where the program was
+5. To stop the server, enter `CTRL+C` in the terminal where the program was
 invoked
 
 ## Documentation
